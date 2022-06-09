@@ -10,7 +10,7 @@ body{
 }
 /**** Layout ****/
 #area-cabecalho{
-    background-color: #fca311;
+    background-color: #554cd4;
     padding: 10px;
     text-align: center;
 
@@ -37,7 +37,7 @@ body{
     color: white;
 }
 .azul{
-    color: #142130;
+    color: #f7b600;
 }
 #area-principal {
 	width: 920px;
