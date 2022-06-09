@@ -8,48 +8,67 @@ body{
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: #142130;
 }
+
 /**** Layout ****/
-#area-cabecalho{
+
+header{
     background-color: #554cd4;
-    padding: 10px;
-    text-align: center;
-
-}
-#linhas {
-	padding: 15px;
-    text-align: center;
-    background-color:#142130;
-    ;
-}
-#linha {
-	padding: 1px;
-    text-align: center;
-    background-color: #142130;
-    ;
+    width: 100%
 }
 
-#area-menu {
-	padding: 10px;
-    text-align: center;
-    background-color: #e5e5e5;
+.area-cabecalho{
+    position: relative;
+	width: 940px;
+    margin: 0px auto;
+
 }
 
-#menu-lista-principal {
-	display: flex;
+.titulo{
+	color: #f7b600;
+	font-size: 4em;
 }
-.branco{
-    color: white;
+
+/* **** Formatação do menu **** */
+
+nav {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+
 }
-.azul{
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+    
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav a:hover{
     color: #f7b600;
 }
+
+/* Formatação da Main */
+
+main{
+	width: 100%;
+}
+
 #area-principal {
-	width: 920px;
+	width: 940px;
+	height: auto;
 	margin: 0 auto;
 	padding: 15px;
 }
 
-#area-postagens {
+.area-postagens {
 	width: 660px;
 	float: left;
 }
@@ -77,19 +96,23 @@ body{
 	border-bottom: 1px dotted #CCC;
 }
 
-#rodape {
+footer{
+    text-align: center;
+    background: url("img\ produtos/bg.jpg");
+    padding: 30px 0;
+}
+
+/* #rodape {
 	clear: both;
 	text-align: center;
 	padding: 15px;
 	background: #CCC;
-}
+} */
 
 
 
-/*
-**** Formatação do menu ****
-*/
-a {
+
+/* a {
 	text-decoration: none;	
 }
 
@@ -100,9 +123,9 @@ a:link, a:visited {
 
 a:hover {
 	text-decoration: underline;
-}
+} */
 
-#area-menu a:link, #area-cabecalho a:visited {
+/* #area-menu a:link, #area-cabecalho a:visited {
 	color: #ffffff;
 	padding: 8px 55px;
 }
@@ -110,14 +133,14 @@ a:hover {
 	color: #ffbc02;
 	background: #142130;
 	text-decoration: none;
-}
+} */
 /*
 **** Formatações em geral ****
 */
-h1 {
-	color: #f7b600;
-	font-size: 4em;
-}
+/* h1 {
+	
+} */
+
 h2 {
 	color: #f7b600;
 }
