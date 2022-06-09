@@ -7,69 +7,30 @@
     <title>Home</title>
 
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/flexbox.css">
 
 </head>
 
 <body>
 
-    <header>
-        <div class="area-cabecalho">
-            <h1 class="titulo">Dev <span style="color:white">Help</span></h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="">Conteúdos</a></li>
-                    <li><a href="">Novidades</a></li>
-                    <li><a href="">Sobre</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header class="cabecalhoPrincipal">
+
+            <div class="container">
+                <h1 class="cabecalhoPrincipal-titulo">Dev <span style="color:white">Help</span></h1>
+
+                <nav class="cabecalhoPrincipal-nav">
+                    <a class="cabecalhoPrincipal-nav-link" href="index.html">Home</a>
+                    <a class="cabecalhoPrincipal-nav-link" href="">Conteúdos</a>
+                    <a class="cabecalhoPrincipal-nav-link" href="">Novidades</a>
+                    <a class="cabecalhoPrincipal-nav-link" href="">Sobre</a>
+                </nav>
+            </div>
+
     </header>
 
-    <main>
-        <div id="area-principal">
-            <div class="area-postagens">
-                <!-- abertura postagem -->
-                <section class="postagem">
-                    <h2>Titulo da postagem 1</h2>
-                    <span class="data-postagem">postado 20 março 2022</span>
-                    <img width="620px" src="img/img2.jpg">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et scelerisque quam. Class aptent
-                        taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent nulla
-                        turpis, gravida at nunc eu, luctus aliquam justo. Praesent eget risus vehicula
-                    </p>
-                    <a href="">Leia mais</a>
-                </section>
-                <!--// fechamento postagem -->
-            </div>
-
-            <div id="area-lateral">
-                <section class="conteudo-lateral">
-                    <h3>Postagens recentes</h3>
-                    <div class="postagem-lateral">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <a href="">Leia mais</a>
-                    </div>
-                </section>
-
-                <section class="conteudo-lateral">
-                    <h3>Categorias</h3>
-
-                    <a href="index.html">Home</a>
-                    <a href="">Conteúdos</a>
-                    <a href="">Novidades</a>
-                    <a href="">Sobre</a>
-                </section>
-                
-            </div>
-    </main>
-
-    <!-- <footer>
-        <div id="rodape">
-            Todos os direitos reservados
-        </div>
-    </footer> -->
+    
+   
 
 </body>
+
 </html>

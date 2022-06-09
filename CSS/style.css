@@ -4,33 +4,77 @@
 }
 
 body{
-    font-size: 1em;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: #142130;
 }
 
 /**** Layout ****/
 
-header{
+.container{
+	width: 94%;
+	
+}
+
+.cabecalhoPrincipal{
     background-color: #554cd4;
-    width: 100%
+	padding: 20px 0;
 }
 
-.area-cabecalho{
-    position: relative;
-	width: 940px;
-    margin: 0px auto;
-
-}
-
-.titulo{
+.cabecalhoPrincipal-titulo{
 	color: #f7b600;
-	font-size: 4em;
+	font-weight: bold;
+	font-size: 2em;
 }
+
+.cabecalhoPrincipal-nav-link {
+	padding: 10px;
+	margin-bottom: 10px;
+	color: #ffffff;
+	text-decoration: none;
+	transition: .5s;
+	display: block;
+	border-bottom: 1px solid #9799A6;
+}
+
+@media(min-width: 769px) {
+
+	.container {
+		width: 85%;	
+	}
+
+
+	.cabecalhoPrincipal-nav-link {
+		border-radius: 5px;
+		border: 1px solid #9799A6;
+	}
+
+	.cabecalhoPrincipal-nav-link:hover {
+		color: #FFF;
+		background-color: #9799A6;
+	}
+
+	.cabecalhoPrincipal-titulo {
+		margin: 0;
+	}
+
+	.cabecalhoPrincipal-nav {
+		width: auto;
+	}
+
+	.cabecalhoPrincipal-nav-link {
+		width: auto;
+		margin: 0 0 0 10px;
+	}
+
+
+}
+
+
+
 
 /* **** Formatação do menu **** */
 
-nav {
+/* nav {
     position: absolute;
     top: 30px;
     right: 40px;
@@ -53,15 +97,17 @@ nav a {
 
 nav a:hover{
     color: #f7b600;
-}
+} */
+
+
 
 /* Formatação da Main */
 
-main{
+/* main{
 	width: 100%;
 }
 
-#area-principal {
+.cabecalhoPrincipal {
 	width: 940px;
 	height: auto;
 	margin: 0 auto;
@@ -141,7 +187,7 @@ a:hover {
 	
 } */
 
-h2 {
+/* h2 {
 	color: #f7b600;
 }
 
@@ -149,4 +195,8 @@ h3 {
 	color: #f7b600;
 	background: #CCC;
 	padding: 5px;
-}
+} */ 
+
+
+
+
