@@ -1,26 +1,26 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+	padding: 0;
+	margin: 0;
 }
 
-body{
+body {
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #142130;
+	background-color: #142130;
 }
 
 /**** Layout ****/
 
-.container{
+.container {
 	width: 94%;
-	
+
 }
 
-.cabecalhoPrincipal{
-    background-color: #554cd4;
+.cabecalhoPrincipal {
+	background-color: #554cd4;
 	padding: 20px 0;
 }
 
-.cabecalhoPrincipal-titulo{
+.cabecalhoPrincipal-titulo {
 	color: #f7b600;
 	font-weight: bold;
 	font-size: 2em;
@@ -39,7 +39,7 @@ body{
 @media(min-width: 769px) {
 
 	.container {
-		width: 85%;	
+		width: 85%;
 	}
 
 
@@ -70,6 +70,36 @@ body{
 }
 
 
+.titulo-centralizado {
+	text-align: center
+}
+
+.novidades {
+	padding: 30px;
+}
+
+h3 {
+	padding: 30px;
+	text-align: center;
+}
+
+p {
+	text-align: center;
+	font-size: large;
+	vertical-align: top;
+	width: 40%;
+	margin-right: 15%;
+}
+
+.imagensNovidades {
+	align-items: center;
+	width: 20%;
+	border-radius: 10px;
+}
+
+.espioes {
+	padding: 20px;
+}
 
 
 /* **** Formatação do menu **** */
@@ -195,8 +225,4 @@ h3 {
 	color: #f7b600;
 	background: #CCC;
 	padding: 5px;
-} */ 
-
-
-
-
+} */
