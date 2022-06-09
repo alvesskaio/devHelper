@@ -10,13 +10,15 @@ body {
 
 /**** Layout ****/
 
-.container {
-	width: 94%;
-}
-
 .cabecalhoPrincipal {
 	background-color: #554cd4;
 	padding: 20px 0;
+	display: flex;
+	justify-content:space-around
+}
+
+.container {
+	width: 95%;
 }
 
 .cabecalhoPrincipal-titulo {
