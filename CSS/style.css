@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Rubik:wght@500;600&display=swap');
+
 * {
 	padding: 0;
 	margin: 0;
@@ -68,10 +70,55 @@ body {
 
 }
 
+.title span{
+	font-size: 34px;
+	font-family: Rubik;
+	font-weight: 500;
+	text-transform: uppercase;
+	text-align: center;
+	position: relative;
+	display: block;
+	color: transparent;
+	animation: revealText 1s var(--total) forwards;
 
-.titulo-centralizado {
-	text-align: center
 }
+
+.title span::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #bb93fc;
+	transform-origin: left;
+	transform: scaleX(0);
+	animation: rollIn var(--duration) var(--delay) forwards, rollOut var(--duration) var(--total) forwards;
+}
+
+@keyframes revealText{
+	to{
+		color:#fff;
+	}
+}
+
+@keyframes rollIn {
+	from{
+		transform: scaleX(0);
+	}
+	to{
+	transform: scaleX(1);
+
+	}
+}
+
+@keyframes rollOut{
+	from{
+		transform: translateX(0);
+	}
+to{
+	transform: translateX(105%);
+}
+}
+
 
 .novidades {
 	padding: 30px;
@@ -80,148 +127,96 @@ body {
 h3 {
 	padding: 30px;
 	text-align: center;
+	font-size: 30px;
 }
 
 p {
 	text-align: center;
 	font-size: large;
 	vertical-align: top;
-	width: 40%;
 	margin-right: 15%;
 }
 
 .imagensNovidades {
-	align-items: center;
-	width: 20%;
+	width: 37%;
 	border-radius: 10px;
+	text-align: center;
+	margin: auto;
+	display: block;
 }
 
 .espioes {
 	padding: 20px;
 }
 
-
-/* **** Formatação do menu **** */
-
-/* nav {
-    position: absolute;
-    top: 30px;
-    right: 40px;
-
+#novidadeText {
+	font-family: Roboto 500;
+	margin: auto;
+	display: block;
+	padding: 26px;
+	color: white;
 }
 
-nav li {
-    display: inline;
-    margin: 0 0 0 15px;
-    
-}
-
-nav a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: black;
-    font-size: 22px;
-    font-weight: bold;
-}
-
-nav a:hover{
-    color: #f7b600;
-} */
-
-
-
-/* Formatação da Main */
-
-/* main{
-	width: 100%;
-}
-
-.cabecalhoPrincipal {
-	width: 940px;
-	height: auto;
-	margin: 0 auto;
+.primeiro-titulo {
+	width: 50%;
+	height: 70vh;
+	background-color: rgba(37, 37, 37, 0.425);
+	color: #FFF;
+	box-shadow: 0 0 10px rgb(0, 0, 0, .25);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border-radius: 8px;
+	position: absolute;
+	top: 55%;
+	left: 50%;
 	padding: 15px;
+	transform: translate(-50%, -50%);
 }
 
-.area-postagens {
-	width: 660px;
-	float: left;
-}
-
-#area-lateral {
-	width: 240px;
-	float: right;
-}
-
-.postagem{
-	padding: 20px;
-	margin-bottom: 20px;
-	background: white;
-}
-
-.conteudo-lateral {
-	background: white;
-	padding: 10px;
-	margin-bottom: 40px;
-}
-
-.postagem-lateral {
-	font-size: 0.8em;
-	padding: 5px;
-	border-bottom: 1px dotted #CCC;
-}
-
-footer{
-    text-align: center;
-    background: url("img\ produtos/bg.jpg");
-    padding: 30px 0;
-}
-
-/* #rodape {
-	clear: both;
-	text-align: center;
+.secudario-titulo {
+	width: 50%;
+	height: 70vh;
+	background-color: rgba(37, 37, 37, 0.425);
+	color: #FFF;
+	box-shadow: 0 0 10px rgb(0, 0, 0, .25);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border-radius: 8px;
+	position: absolute;
+	top: 130%;
+	left: 50%;
 	padding: 15px;
-	background: #CCC;
-} */
-
-
-
-
-/* a {
-	text-decoration: none;	
+	transform: translate(-50%, -50%);
 }
 
-a:link, a:visited {
-	color: #142130;
-    font-size: 1.3em;
+.terceiro-titulo {
+	width: 50%;
+	height: 70vh;
+	background-color: rgba(37, 37, 37, 0.425);
+	color: #FFF;
+	box-shadow: 0 0 10px rgb(0, 0, 0, .25);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border-radius: 8px;
+	position: absolute;
+	top: 205%;
+	left: 50%;
+	padding: 15px;
+	transform: translate(-50%, -50%);
 }
 
-a:hover {
-	text-decoration: underline;
-} */
-
-/* #area-menu a:link, #area-cabecalho a:visited {
-	color: #ffffff;
-	padding: 8px 55px;
+.quarto-titulo {
+	width: 50%;
+	height: 70vh;
+	background-color: rgba(37, 37, 37, 0.425);
+	color: #FFF;
+	box-shadow: 0 0 10px rgb(0, 0, 0, .25);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border-radius: 8px;
+	position: absolute;
+	top: 280%;
+	left: 50%;
+	padding: 15px;
+	transform: translate(-50%, -50%);
 }
-#area-menu a:hover {
-	color: #ffbc02;
-	background: #142130;
-	text-decoration: none;
-} */
-/*
-**** Formatações em geral ****
-*/
-/* h1 {
-	
-} */
-
-/* h2 {
-	color: #f7b600;
-}
-
-h3 {
-	color: #f7b600;
-	background: #CCC;
-	padding: 5px;
-} */
