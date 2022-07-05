@@ -16,7 +16,7 @@ body {
 	background-color: #554cd4;
 	padding: 20px 0;
 	display: flex;
-	justify-content:space-around
+	justify-content: space-around
 }
 
 .container {
@@ -72,7 +72,7 @@ body {
 
 }
 
-.title span{
+.title span {
 	font-size: 34px;
 	font-family: Rubik;
 	font-weight: 500;
@@ -96,33 +96,35 @@ body {
 	-webkit-animation: rollIn var(--duration) var(--delay) forwards, rollOut var(--duration) var(--total) forwards;
 }
 
-.title span:nth-child(2)::after{
+.title span:nth-child(2)::after {
 	border-top: 3px solid #896ab9;
 }
 
-@-webkit-keyframes revealText{
-	to{
-		color:#fff;
+@-webkit-keyframes revealText {
+	to {
+		color: #fff;
 	}
 }
 
 @-webkit-keyframes rollIn {
-	from{
+	from {
 		transform: scaleX(0);
 	}
-	to{
-	transform: scaleX(1);
+
+	to {
+		transform: scaleX(1);
 
 	}
 }
 
-@keyframes rollOut{
-	from{
+@keyframes rollOut {
+	from {
 		transform: translateX(0);
 	}
-to{
-	transform: translateX(105%);
-}
+
+	to {
+		transform: translateX(105%);
+	}
 }
 
 
@@ -134,7 +136,18 @@ h3 {
 	padding: 30px;
 	text-align: center;
 	font-size: 30px;
+	color:#f7b600;
 }
+
+.organograma {
+	padding: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+}
+
 
 p {
 	text-align: center;
@@ -225,4 +238,9 @@ p {
 	left: 50%;
 	padding: 15px;
 	transform: translate(-50%, -50%);
+}
+
+.home-conteudo {
+	color:#ffffff;
+	text-align: center;
 }
