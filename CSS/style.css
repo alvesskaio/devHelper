@@ -39,6 +39,17 @@ body {
 	border-bottom: 1px solid #9799A6;
 }
 
+.cabecalhoPrincipal-main{
+	text-align: center;
+	margin-top: 2em;
+	color: #ffffff;
+	font-size: 3em;
+}
+
+.conteudoPrincipal-main p{
+	text-align: center;
+} 
+
 @media(min-width: 769px) {
 
 	.container {
@@ -136,12 +147,12 @@ h3 {
 	font-size: 30px;
 }
 
-p {
+/* p {
 	text-align: center;
 	font-size: large;
 	vertical-align: top;
 	margin-right: 15%;
-}
+} */
 
 .imagensNovidades {
 	width: 37%;
@@ -162,6 +173,7 @@ p {
 	padding: 26px;
 	color: white;
 }
+
 
 .primeiro-titulo {
 	width: 50%;
