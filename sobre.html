@@ -29,8 +29,118 @@
         </div>
 
     </header>
+    <main>
+        <div id="organograma" class="organograma"></div>
+
+    </main>
+
 
 
 </body>
 
 </html>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script>
+
+    google.charts.load('current', {
+        packages: ["orgchart"]
+    });
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Name');
+        data.addColumn('string', 'Manager');
+        data.addColumn('string', 'ToolTip');
+
+        // For each orgchart box, provide the name, manager, and tooltip to show.
+        data.addRows([
+            [{
+                v: 'Kaio',
+                f: 'Kaio <div><a target="sobre" href="https://www.linkedin.com/in/kaiosoaresalves/">Presidente</a></div>'
+            },
+                '', 'Presidente'
+            ],
+            [{
+                v: 'Jonas',
+                f: 'Jonas <div><a target="sobre" href="https://www.linkedin.com/in/jonas-flora-7356991b0/">Vice Presidente</a></div>'
+            },
+                'Kaio', 'Vice Presidente'
+            ],
+            [{
+                v: 'Vinicius',
+                f: 'Vinicius <div><a target="sobre" href="https://www.linkedin.com/in/viniciusfs32/">Diretor Executivo</a></div>'
+            },
+                'Jonas', 'Diretor Executivo'
+            ],
+            [{
+                v: 'Mateus',
+                f: 'Mateus <div><a target="sobre" href="https://www.linkedin.com/in/mateus-santana-18a69521a/">Diretor Produção</a></div>'
+            },
+                'Vinicius', 'Diretor Produção'
+            ],
+            [{
+                v: 'Rebecca',
+                f: 'Rebecca <div><a target="sobre" href="https://www.linkedin.com/in/rebecca-garcia-dias-5090a4221/">Gestora Financeiro</a></div>'
+            },
+                'Mateus', 'Gestora Financeiro'
+            ],
+            [{
+                v: 'Phelipe',
+                f: 'Phelipe <div><a target="sobre" href="https://www.linkedin.com/in/phelippe-vasquez-29365b197/">Diretor Admnistrativo</a></div>'
+            },
+                'Vinicius', 'Diretor Admnistrativo'
+            ],
+            [{
+                v: 'Eduarda',
+                f: 'Eduarda <div><a target="sobre" href="">Gestora Financeiro</a></div>'
+            },
+                'Phelipe', 'Gestora Financeiro'
+            ],
+            [{
+                v: 'Jadson',
+                f: 'Jadson <div><a target="sobre" href="">Diretor Logistico</a></div>'
+            },
+                'Vinicius', 'Diretor Logistico'
+            ],
+            [{
+                v: 'Larissa',
+                f: 'Larissa <div><a target="sobre" href="">Gestora Logistico</a></div>'
+            },
+                'Jadson', 'Gestora Logistico'
+            ],
+            [{
+                v: 'Gabriel',
+                f: 'Gabriel <div><a target="sobre" href="">Diretor Financeiro</a></div>'
+            },
+                'Vinicius', 'Diretor Financeiro'
+            ],
+            [{
+                v: 'Beatriz',
+                f: 'Beatriz <div><a target="sobre" href="">Gestora Financeiro</a></div>'
+            },
+                'Gabriel', 'Gestora Financeiro'
+            ],
+
+
+            ['Jonas', 'Kaio', ''],
+            ['Vinicius', 'Jonas', ''],
+            ['Mateus', 'Vinicius', ''],
+            ['Phelipe', 'Vinicius', ''],
+            ['Jadson', 'Vinicius', ''],
+            ['Gabriel', 'Vinicius', ''],
+            ['Rebecca', 'Mateus', ''],
+            ['Eduarda', 'Phelipe', ''],
+            ['Larissa', 'Jadson', ''],
+            ['Beatriz', 'Gabriel', '']
+        ]);
+
+        // Create the chart.
+        var chart = new google.visualization.OrgChart(document.getElementById('organograma'));
+        // Draw the chart, setting the allowHtml option to true for the tooltips.
+        chart.draw(data, {
+            allowHtml: true
+        });
+    }
+</script>

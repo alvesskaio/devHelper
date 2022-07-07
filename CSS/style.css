@@ -138,6 +138,15 @@ body {
 	}
 }
 
+.organograma {
+	padding: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+}
+
 
 .novidades {
 	padding: 30px;
