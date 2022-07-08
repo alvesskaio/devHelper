@@ -91,7 +91,9 @@ body {
 	margin: 1%;
 	position: relative;
 }
-
+.conteudo-main-home{
+	color: white;
+}
 
 .conteudoPrincipal-cursos-link a {
 	text-decoration: none;
@@ -153,7 +155,7 @@ body {
 	position: relative;
 	display: block;
 	color: transparent;
-	-webkit-animation: revealText 1s var(--total) forwards;
+	/* -webkit-animation: revealText 1s var(--total) forwards; */
 
 }
 
@@ -165,7 +167,7 @@ body {
 	background: #bb93fc;
 	transform-origin: left;
 	transform: scaleX(0);
-	-webkit-animation: rollIn var(--duration) var(--delay) forwards, rollOut var(--duration) var(--total) forwards;
+	/* -webkit-animation: rollIn var(--duration) var(--delay) forwards, rollOut var(--duration) var(--total) forwards; */
 }
 
 .title span:nth-child(2)::after {
@@ -174,6 +176,8 @@ body {
 
 .novidades {
 	padding: 30px;
+	width: 100%;
+	height: 50px;
 }
 
 .imagensNovidades {
@@ -274,7 +278,7 @@ body {
 	font-size: 20px;
 }
 
-@-webkit-keyframes revealText {
+/* @-webkit-keyframes revealText {
 	to {
 		color: #fff;
 	}
@@ -299,7 +303,7 @@ body {
 	to {
 		transform: translateX(105%);
 	}
-}
+} */
 
 /* .imagemFluxo{
 	width: 30%;
