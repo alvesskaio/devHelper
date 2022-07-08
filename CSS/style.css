@@ -91,8 +91,19 @@ body {
 	margin: 1%;
 	position: relative;
 }
+.imagemDev{
+	position: absolute;
+	left: 700px;
+	top: 250px;
+
+}
 .conteudo-main-home{
 	color: white;
+	margin: 20px;
+}
+
+.titulo-main-home{
+	color: #f7b600;
 }
 
 .conteudoPrincipal-cursos-link a {
@@ -277,6 +288,8 @@ body {
 	align-items: center;
 	font-size: 20px;
 }
+
+
 
 /* @-webkit-keyframes revealText {
 	to {
