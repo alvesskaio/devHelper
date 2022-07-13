@@ -16,29 +16,29 @@ body {
 
 /* index */
 
-#tela-login{
+#tela-login {
 	background-color: #554cd4;
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%,-50%);
+	transform: translate(-50%, -50%);
 	padding: 60px;
 	border-radius: 15px;
 	color: white;
 	border: 2px solid #f7b600;
 	display: flex;
-    flex-direction: column;
-    align-items: center;
+	flex-direction: column;
+	align-items: center;
 }
 
-#titulo-login{
+#titulo-login {
 	text-align: center;
 	font-weight: bold;
 	font-size: 35px;
-	
+
 }
 
-.input-login{
+.input-login {
 	padding: 10px;
 	border: none;
 	border-radius: 5px;
@@ -46,18 +46,19 @@ body {
 	font-size: 15px;
 }
 
-#button-login{
+#button-login {
 	background-color: #f7b600;
 	border: none;
 	padding: 10px;
 	width: 60%;
 	border-radius: 10px;
-	color: white	;
+	color: white;
 }
 
-#button-login:hover{
+#button-login:hover {
 	background-color: #fdc835;
 }
+
 /**** Layout ****/
 
 .cabecalhoPrincipal {
@@ -82,27 +83,29 @@ body {
 	padding: 30px;
 	text-align: center;
 	font-size: 30px;
-	color:#f7b600;
+	color: #f7b600;
 }
 
-.conteudo-main{
+.conteudo-main {
 	width: 25%;
 	height: 100px;
 	margin: 1%;
 	position: relative;
 }
-.imagemDev{
+
+.imagemDev {
 	position: absolute;
 	left: 700px;
 	top: 250px;
 
 }
-.conteudo-main-home{
+
+.conteudo-main-home {
 	color: white;
 	margin: 20px;
 }
 
-.titulo-main-home{
+.titulo-main-home {
 	color: #f7b600;
 }
 
@@ -145,7 +148,7 @@ body {
 	margin-bottom: 20px;
 }
 
-.cabecalhoPrincipal-main{
+.cabecalhoPrincipal-main {
 	text-align: center;
 	margin-top: 1em;
 	margin-bottom: 1em;
@@ -153,9 +156,9 @@ body {
 	font-size: 3em;
 }
 
-.conteudoPrincipal-main p{
+.conteudoPrincipal-main p {
 	text-align: center;
-} 
+}
 
 .title span {
 	font-size: 34px;
@@ -276,7 +279,7 @@ body {
 }
 
 .home-conteudo {
-	color:#ffffff;
+	color: #ffffff;
 	margin-left: 15px;
 }
 
@@ -289,7 +292,25 @@ body {
 	font-size: 20px;
 }
 
+.titulo-benchmarking{
+	font-size: 30px;
+	color: #f7b600;
+	margin: 0 auto;
+	width: 94%;
 
+}
+.benchmarking-conteudo {
+	color: #fff;
+	margin: 0 auto;
+	width: 94%;
+	margin-top: 111px;
+
+}
+
+.benchmarking-conteudo-paragrafo{
+	margin: 15px 0px;
+
+}
 
 /* @-webkit-keyframes revealText {
 	to {
@@ -391,6 +412,3 @@ body {
 		transform: translateX(105%);
 	}
 }
-
-
-
