@@ -8,6 +8,8 @@
     <title>Novidades</title>
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/flexbox.css">
+    <link rel="stylesheet" href="CSS/content.css">
+
 
 </head>
 
@@ -15,14 +17,15 @@
 
     <header class="cabecalhoPrincipal">
 
-        <div class="container">
+        <div class="container-content">
             <h1 class="cabecalhoPrincipal-titulo">Dev <span style="color:white">Help</span></h1>
 
-            <nav class="cabecalhoPrincipal-nav">
-                <a class="cabecalhoPrincipal-nav-link" href="home.html">Home</a>
-                <a class="cabecalhoPrincipal-nav-link" href="conteudo.html">Conteúdos</a>
-                <a class="cabecalhoPrincipal-nav-link" href="novidades.html">Novidades</a>
-                <a class="cabecalhoPrincipal-nav-link" href="sobre.html">Sobre</a>
+            <nav class="cabecalhoPrincipal-nav wrapper">
+                <a class="cabecalhoPrincipal-nav-link button three hover-shadow hover-color"
+                    href="home.html"><span>H</span><span>o</span><span>m</span><span>e</span></a></a>
+                <a class="cabecalhoPrincipal-nav-link button three" href="conteudo.html">Conteúdos</a>
+                <a class="cabecalhoPrincipal-nav-link button three" href="novidades.html">Novidades</a>
+                <a class="cabecalhoPrincipal-nav-link button three" href="sobre.html">Sobre</a>
             </nav>
 
 
@@ -30,8 +33,10 @@
 
     </header>
 
-    
-
+    <div class="container">
+        <p>Em breve <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+      </div>
+<script src="js/content.js"></script>
 </body>
 
 </html>
