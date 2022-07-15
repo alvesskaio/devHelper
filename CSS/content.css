@@ -60,3 +60,14 @@ body {
 	display: block;
 	border-bottom: 1px solid #9799A6;
 }
+
+.container {
+	width: 94%;
+	margin: 0 auto;
+}
+
+.cabecalhoPrincipal-titulo {
+	color: #f7b600;
+	font-weight: bold;
+	font-size: 2em;
+}
