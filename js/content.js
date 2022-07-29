@@ -1,7 +1,7 @@
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["conteúdo novo", ", loading..."];
+const textArray = ["Dev Help", ", loading..."];
 const typingDelay = 200;
 const erasingDelay = 100;
 const newTextDelay = 2000; // Delay between current and next text
@@ -38,4 +38,16 @@ function erase() {
 
 document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
   if(textArray.length) setTimeout(type, newTextDelay + 250);
+});
+
+/*
+  @project Expanding Flex Cards
+  @author: Jamshid Elmi
+  @created: 2022-03-25 19:13:18
+  @modified: 2022-03-25 19:13:18
+  @tutorial: https://youtu.be/pvjNbaV0Keo
+*/
+$(".card").click(function () {
+  $(".card").removeClass("active");
+  $(this).addClass("active");
 });
