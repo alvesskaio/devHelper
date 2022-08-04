@@ -31,4 +31,6 @@
 
   .video{
     margin-bottom: 3em;
+    border: solid 2px white;
+    border-radius: 10px;
   }
