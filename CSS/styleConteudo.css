@@ -23,3 +23,12 @@
   .conteudoPrincipal span.cursor.typing {
     animation: none;
   }
+
+  .videoConteudo{
+    width: 500px;
+    margin: 2em auto;
+  }
+
+  .video{
+    margin-bottom: 3em;
+  }
