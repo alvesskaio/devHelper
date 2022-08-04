@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contato</title>
+    <!-- <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/flexbox.css">
+    <link rel="stylesheet" href="styles-linkedin2.css">
+    <link rel="stylesheet" href="CSS/content.css">
+    <link rel="stylesheet" href="CSS/styleConteudo.css"> -->
+
+    <link rel="stylesheet" href="CSS/styleEstruturaPadrao.css">
+    <link rel="stylesheet" href="CSS/styleConteudo.css">
+    <!-- <link rel="stylesheet" href="CSS/reset.css"> -->
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar-area">
+            <div class="container">
+                <nav class="site-navbar">
+                    <a href="#home" class="site-logo">Dev <span style="color:#fff">Help</a>
+
+                    <!-- site menu/nav -->
+                    <ul>
+                        <li><a href="home.html">home</a></li>
+                        <li><a href="NovoConteudo.html">Conteúdos</a></li>
+                        <li><a href="novidades.html">Novidades</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                    </ul>
+
+                    <!-- nav-toggler for mobile version only -->
+                    <button class="nav-toggler">
+                        <span></span>
+                    </button>
+                </nav>
+            </div>
+        </div><!-- navbar-area end -->
+    </header>
+
+    <main>
+        <form class="formContato">
+
+            <div class="conteinerContato">
+                <label for="nomesobrenome">Nome e sobrenome</label>
+                <input type="text" id="nomesobrenome" class="input-padrao" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+                <label for="mensagem">Mensagem</label>
+                <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+                <fieldset style="border: 0;">
+                    <legend>Como prefere o nosso contato?</legend>
+                    <label for="radio-email">
+                        <input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+
+                    <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
+
+                    <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
+                </fieldset>
+
+                <label class="checkbox"><input type="checkbox" checked> Gostaria de receber nossas novidades por email?</label>
+                <input type="submit" value="Enviar formulário" class="enviar">
+            </div>
+
+        </form>
+
+    </main>
+
+
+</body>
+
+</html>
+
+
+<!-- <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> -->
+<!-- <script>
+    google.charts.load('current', {
+        packages: ["orgchart"]
+    });
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Name');
+        data.addColumn('string', 'Manager');
+        data.addColumn('string', 'ToolTip');
+
+        // For each orgchart box, provide the name, manager, and tooltip to show.
+        data.addRows([
+            [{
+                    v: 'Kaio',
+                    f: 'Kaio <div class="wrap"><p><a class="button three" target="sobre" href="https://www.linkedin.com/in/kaiosoaresalves/">Presidente</a></p></div>'
+                },
+                '', 'Presidente'
+            ],
+            [{
+                    v: 'Jonas',
+                    f: 'Jonas <div class="button three"><p><a class="button three" target="sobre" href="https://www.linkedin.com/in/jonas-flora-7356991b0/">Vice Presidente</a></p></div>'
+                },
+                'Kaio', 'Vice Presidente'
+            ],
+            [{
+                    v: 'Vinicius',
+                    f: 'Vinicius <div class="button three"><p><a class="button three" target="sobre" href="https://www.linkedin.com/in/viniciusfs32/">Diretor Executivo</a></p></div>'
+                },
+                'Jonas', 'Diretor Executivo'
+            ],
+            [{
+                    v: 'Mateus',
+                    f: 'Mateus <div class="button three"><p><a class="button three" target="sobre" href="https://www.linkedin.com/in/mateus-santana-18a69521a/">Diretor Produção</a></p></div>'
+                },
+                'Vinicius', 'Diretor Produção'
+            ],
+            [{
+                    v: 'Rebecca',
+                    f: 'Rebecca <div class="button three"><p><a class="button three" target="sobre" href="https://www.linkedin.com/in/rebecca-garcia-dias-5090a4221/">Gestora Financeiro</a></p></div>'
+                },
+                'Mateus', 'Gestora Financeiro'
+            ],
+            [{
+                    v: 'Phelipe',
+                    f: 'Phelipe <div class="button three"><p><a class="button three" target="sobre" href="https://www.linkedin.com/in/phelippe-vasquez-29365b197/">Diretor Admnistrativo</a></p></div>'
+                },
+                'Vinicius', 'Diretor Admnistrativo'
+            ],
+            [{
+                    v: 'Eduarda',
+                    f: 'Eduarda <div class="button three"><p><a class="button three" target="sobre" href="https://www.linkedin.com/in/maria-eduarda-correia-5459741b8">Gestora Financeiro</a></p></div>'
+                },
+                'Phelipe', 'Gestora Financeiro'
+            ],
+            [{
+                    v: 'Jadson',
+                    f: 'Jadson <div class="button three"><p><a class="button three" target="sobre" href="https://www.linkedin.com/in/jadson-lima-780326232">Diretor Logistico</a></p></div>'
+                },
+                'Vinicius', 'Diretor Logistico'
+            ],
+            [{
+                    v: 'Larissa',
+                    f: 'Larissa <div class="button three"><p><a class="button three" target="sobre" href="">Gestora Logistico</a></p></div>'
+                },
+                'Jadson', 'Gestora Logistico'
+            ],
+            [{
+                    v: 'Gabriel',
+                    f: 'Gabriel <div class="button three"><p><a class="button three" target="sobre" href="">Diretor Financeiro</a></p></div>'
+                },
+                'Vinicius', 'Diretor Financeiro'
+            ],
+            [{
+                    v: 'Beatriz',
+                    f: 'Beatriz <div class="button three"><p><a class="button three" target="sobre" href="">Gestora Financeiro</a></p></div>'
+                },
+                'Gabriel', 'Gestora Financeiro'
+            ],
+
+            ['Jonas', 'Kaio', ''],
+            ['Vinicius', 'Jonas', ''],
+            ['Mateus', 'Vinicius', ''],
+            ['Phelipe', 'Vinicius', ''],
+            ['Jadson', 'Vinicius', ''],
+            ['Gabriel', 'Vinicius', ''],
+            ['Rebecca', 'Mateus', ''],
+            ['Eduarda', 'Phelipe', ''],
+            ['Larissa', 'Jadson', ''],
+            ['Beatriz', 'Gabriel', '']
+        ]);
+
+        // Create the chart.
+        var chart = new google.visualization.OrgChart(document.getElementById('organograma'));
+        // Draw the chart, setting the allowHtml option to true for the tooltips.
+        chart.draw(data, {
+            allowHtml: true
+        });
+    }
+</script> -->
