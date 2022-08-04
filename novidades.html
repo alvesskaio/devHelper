@@ -6,32 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Novidades</title>
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/flexbox.css">
+    <!-- <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/flexbox.css"> -->
+
+    <link rel="stylesheet" href="CSS/styleEstruturaPadrao.css">
+    <link rel="stylesheet" href="CSS/styleConteudo.css">
 
 </head>
 
 <body>
 
-    <header class="cabecalhoPrincipal">
+    <header>
+        <div class="navbar-area">
+            <div class="container">
+                <nav class="site-navbar">
+                    <a href="#home" class="site-logo">Dev <span style="color:#fff">Help</a>
 
-        <div class="container">
-            <h1 class="cabecalhoPrincipal-titulo">Dev <span style="color:white">Help</span></h1>
+                    <!-- site menu/nav -->
+                    <ul>
+                        <li><a href="home.html">home</a></li>
+                        <li><a href="NovoConteudo.html">Conteúdos</a></li>
+                        <li><a href="novidades.html">Novidades</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
 
-            <nav class="cabecalhoPrincipal-nav wrapper">
-                <a class="cabecalhoPrincipal-nav-link button three hover-shadow hover-color"
-                    href="home.html"><span>H</span><span>o</span><span>m</span><span>e</span></a></a>
-                <a class="cabecalhoPrincipal-nav-link button three" href="conteudo.html">Conteúdos</a>
-                <a class="cabecalhoPrincipal-nav-link button three" href="novidades.html">Novidades</a>
-                <a class="cabecalhoPrincipal-nav-link button three" href="sobre.html">Sobre</a>
-            </nav>
-
-
-        </div>
-
+                    <!-- nav-toggler for mobile version only -->
+                    <button class="nav-toggler">
+                        <span></span>
+                    </button>
+                </nav>
+            </div>
+        </div><!-- navbar-area end -->
     </header>
 
-    <main class="conteiner-novidades">
+    <!-- <main class="conteiner-novidades">
         <div class="novidades">
             <h1 class="title">
                 <span class="titulo-centralizado" style="color:#f7b600">Novidades</h1>
@@ -111,7 +119,7 @@
                 </section>
             </div>
         </div>
-    </main>
+    </main> -->
 
 </body>
 

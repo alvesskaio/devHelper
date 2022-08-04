@@ -7,12 +7,166 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/flexbox.css">
+    <!-- <link rel="stylesheet" href="CSS/style.css"> -->
+    <!-- <link rel="stylesheet" href="CSS/flexbox.css"> -->
+
+    <link rel="stylesheet" href="CSS/styleEstruturaPadrao.css">
+    <link rel="stylesheet" href="CSS/styleConteudo.css">
 
 </head>
 
 <body>
+    <div class="navbar-area">
+        <div class="container">
+            <nav class="site-navbar">
+                <a href="#home" class="site-logo">Dev <span style="color:#fff">Help</a>
+
+                <!-- site menu/nav -->
+                <ul>
+                    <li><a href="home.html">home</a></li>
+                    <li><a href="NovoConteudo.html">Conteúdos</a></li>
+                    <li><a href="novidades.html">Novidades</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+
+                <!-- nav-toggler for mobile version only -->
+                <button class="nav-toggler">
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </div><!-- navbar-area end -->
+
+    <main> 
+
+        <!-- <h1>Sobre a Dev Help</h1> -->
+        
+
+        
+
+        <div class="cards">
+            <div class="card active" style="--bg: url(../img/membros/img-2.1.jpg)">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon" style="--color: blue">
+                        <ion-icon name="sparkles"></ion-icon>
+                    </div>
+                    <div class="info">
+                        <div class="title">Kaio Soares Alves</div>
+                        <div>Presidente</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card " style="--bg: url(../img/membros/img-1.jpg)">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon" style="--color: green">
+                        <ion-icon name="sunny"></ion-icon>
+                    </div>
+                    <div class="info">
+                        <div class="title">Vinicius Farias Silva</div>
+                        <div>FullStack Developer</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="--bg: url(../img/membros/jadson-2.jpg)">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon" style="--color: orange">
+                        <ion-icon name="thunderstorm"></ion-icon>
+                    </div>
+                    <div class="info">
+                        <div class="title">Jadson</div>
+                        <div>Maromba</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="--bg: url(../img/membros/mateus.jpg)">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon" style="--color: black">
+                        <ion-icon name="snow"></ion-icon>
+                    </div>
+                    <div class="info">
+                        <div class="title">Mateus Santana</div>
+                        <div>Not a Season, It's Celebration</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="--bg: url(../img/membros/rebecca.jpg)">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon" style="--color: black">
+                        <ion-icon name="snow"></ion-icon>
+                    </div>
+                    <div class="info">
+                        <div class="title">Rebecca</div>
+                        <div>Not a Season, It's Celebration</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="--bg: url(../img/membros/eduarda.jpg)">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon" style="--color: black">
+                        <ion-icon name="snow"></ion-icon>
+                    </div>
+                    <div class="info">
+                        <div class="title">Eduarda</div>
+                        <div>Not a Season, It's Celebration</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="--bg: url(../img/membros/bea.jpg)">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon" style="--color: black">
+                        <ion-icon name="snow"></ion-icon>
+                    </div>
+                    <div class="info">
+                        <div class="title">Bea</div>
+                        <div>Not a Season, It's Celebration</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="--bg: url(../img/membros/paulo.jpg)">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon" style="--color: black">
+                        <ion-icon name="snow"></ion-icon>
+                    </div>
+                    <div class="info">
+                        <div class="title">Paulo Gabriel</div>
+                        <div>Not a Season, It's Celebration</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="--bg: url(../img/membros/phelippe.jpeg)">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon" style="--color: black">
+                        <ion-icon name="snow"></ion-icon>
+                    </div>
+                    <div class="info">
+                        <div class="title">Phelippe Vasquez</div>
+                        <div>Not a Season, It's Celebration</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+</body>
+
+<!-- <body>
+
 
     <header class="cabecalhoPrincipal">
 
@@ -76,10 +230,15 @@
         </div>
 
     </main>
+
     <footer>
 
     </footer>
     <script src="js/home.js"></script>
-</body>
+</body> -->
 
 </html>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/content.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
